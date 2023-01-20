@@ -3,9 +3,8 @@ pipeline {
 
     environment {
         registry = "211223789150.dkr.ecr.us-east-2.amazonaws.com/my-python-repo"
-    }
-    
-    stages {
+   }
+     stages {
         stage('Checkout') {
             steps {
                 checkout([$class: 'GitSCM', branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/akannan1087/myPythonDockerRepo']]])
@@ -15,7 +14,7 @@ pipeline {
         stage ("Build image") {
             steps {
                 script {
-                    docker.build registry
+                        docker.build registry
                 }
             }
         }
