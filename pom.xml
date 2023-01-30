@@ -5,7 +5,7 @@
  
     <groupId>com.tcs.angularjs</groupId>
     <artifactId>springbootApp</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.2</version>
     <packaging>jar</packaging>
     <name>MyAwesomeApp</name>
     <description>SpringBoot Angularjs</description>
@@ -13,7 +13,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>1.4.2.RELEASE</version>
+        <version>1.0.2</version>
         <relativePath/> 
     </parent>
  
